@@ -1,0 +1,340 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+*:focus {
+    outline: none;
+}
+@font-face {
+    font-family: Helvetica; 
+    src: url(../fonts/Helvetica.otf);
+    font-family: HelveticaBold; 
+    src: url(../fonts/HelveticaBold.otf);
+    font-family: HelveticaLite; 
+    src: url(../fonts/9204.otf);
+}
+body {
+	box-sizing: border-box;
+	height: 100vh;
+	border-top: 2px solid #477ca6;
+	background: linear-gradient(to top, #e6ebef, #aac5e2);
+	display: flex;
+	font-family: "Helvetica";
+}
+.wrapper {
+	min-width: 1100px;
+	min-height: 730px;
+	margin: 0 auto;
+	background-color: #FFF;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+.navigation {
+	width: 275px;
+	display: flex;
+	flex-direction: column;
+	border-right: 2px solid #eeeeee;
+
+}
+nav {
+	min-width: 275px;
+	height: 63px;
+	background-color: #FFF;
+	padding-top: 7px;
+}
+nav p {
+	text-align: center;
+
+	width: 100%;
+	margin-bottom: 13px;
+}
+div.back-button {
+	position: absolute;
+	height: 18px;
+	width: 12px;
+	top: 13px;
+	background-image: url('../img/left.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+form {
+	margin: 0  4px;
+}
+nav input[type="text"] {
+	height: 28px;
+	width: 100%;
+	font-style: italic;
+	box-sizing: border-box;
+	padding-right: 70px;
+}
+nav input[type="image"] {
+	height: 22px;
+	width: 22px;
+	left:  15em;
+  	position: relative;
+  	top: -2em;
+  	vertical-align: middle;
+  	margin-right: 0.3em;
+}
+nav input[type="reset"] {
+	left: 15em;
+	border: none;
+	background: none;
+	height: 25px;
+	width: 25px;
+	background-image: url('../img/reset.png');
+	background-size: contain;
+	top: -2em;
+	position: relative;
+	vertical-align: middle;
+}
+.orders-list {
+	flex: 1 1 auto;
+	overflow-y: scroll;
+}
+.order-preview {
+	height: 100px;
+	background-color: #FFF;
+	border-top: 1px solid grey;
+	padding: 7px 7px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-between;
+	align-items: baseline;
+	font-size: 14px;
+
+}
+.order-number {
+	font-size: 17px;
+	font-weight: bold;
+}
+.order-data {
+	font-size: 21px;
+}
+.order-company {
+ 	color: #575b64;
+}
+.order-time {
+ 	color: #199242;
+}
+.order-shipped-time {
+	color: #575b64;
+}
+.order-in-focus {
+	background-color: #e8eff7;
+}
+.order-preview:last-child {
+	border-bottom: 1px solid grey;
+}
+.navigation footer {
+	min-height: 35px;
+}
+.currentOrder footer {
+	min-height: 35px;
+}
+footer {
+	height: 35px;
+	background-color: #2f3b47;
+	text-align: right;
+}
+footer input[type="image"] {
+	height: 15px;
+	width: 15px;
+	background-size: contain;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-right: 10px;
+}
+footer input[type="image"]:first-child {
+	margin-right: 25px;
+}
+div.currentOrder {
+	min-width: 650px;
+	flex: 1 1 auto;
+	background-color: #FFF;
+	display: flex;
+	flex-direction: column;
+}
+.order {
+	height: 259px;
+	background-color: #eff4f8;
+	padding: 0 20px;
+	color: #696363;
+	border-bottom: 1px solid #bcd0e7;
+}
+.order > p {
+	margin-bottom: 13px;
+}
+p.main-order {
+	color: #000;
+	font-size: 20px;
+}
+p.current-order-head {
+	min-height: 30px;
+	text-align: center;
+	border-bottom: 2px solid black;
+	color: #696363;
+	padding-top: 6px;
+	box-sizing: border-box;
+	margin: 0 -20px;
+	margin-bottom: 0;
+}
+.price-and-order {
+	margin-top: 35px;
+	display: flex;
+	justify-content: space-between;
+}
+.currency {
+	text-align: right;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+.order .currency {
+	font-size: 10px;
+}
+.address-info,
+.client-info {
+	background: none;
+	border: none;
+	height: 55px;
+	width: 40px;
+	border-bottom: 1px solid #000;
+}	
+.address-info {
+	background: url(../img/truck.png) no-repeat;
+	background-size: contain;
+	margin-right: 10px;
+}
+.client-info  {
+	background: url(../img/user.png) no-repeat;
+	background-size: contain;
+}
+.orderAddress {
+	padding: 0 10px;
+	min-height: 180px;
+}
+p.shipping-address {
+	margin-top: 25px;
+	padding-left: 10px;
+	font-size: 20px;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+div.address-wrapper {
+	display: flex;
+}
+div.address-form {
+	flex: 1 1 auto;
+}
+.address-form p {
+	text-align: right;
+	color: #797471;
+	padding-right: 15px;
+}
+.address-form p,
+.current-address p {
+	padding-bottom: 5px;
+	font-size: 13px;
+}
+div.current-address {
+	flex: 3 1 auto;
+}
+div.orderItems {
+	flex: 1 1 auto;
+	background-color: #fafafa;
+	padding:  10px;
+	padding-top: 25px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 10px;
+}
+.orderItems > p {
+	padding-left: 10px;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.font-bold {
+	font-weight: bold;
+}
+.table {
+	flex: 1 1 auto;
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: stretch;
+
+}
+.table-head {
+	width: 100%;
+    flex: 0 1 auto;
+	background-color: #dfdfdf;
+}
+.table-body {
+	width: 100%;
+	flex: 1 1 auto;
+	overflow-y: scroll;
+}
+.table-body::-webkit-scrollbar {
+ 	width:0px;
+}
+.table-head, 
+.table-body div {
+ 	display: flex;
+ 	justify-content: space-between;
+}
+ .table-head p {
+ 	height: 28px;
+}
+.table-head p,
+.table-body div p {
+	text-align: right;
+	padding: 0 10px;
+	border-top: 1px solid grey;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+ .table-body div p {
+ 	padding-top: 5px;
+ 	height: 45px;
+ 	background-color: #FFF;
+
+}
+.table-head p:first-child,
+.table-body div p:first-child {
+	text-align: left;
+	width: 35%;
+}
+.table-head p:nth-child(2),
+.table-body div p:nth-child(2) {
+ 	width: 15%;
+}
+.table-head p:nth-child(3),
+.table-body div p:nth-child(3) {
+	width: 25%;
+}
+.table-head p:nth-child(4),
+.table-body div p:nth-child(4) {
+ 	width: 25%;
+}
+.table-body div:last-child{
+	border-bottom: 1px solid grey;
+}
+.table-body > div > p:first-child > span {
+	display: block;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: #FFF; 
+}
+::-webkit-scrollbar-thumb {
+	background-color: #b1b1b1; 
+}

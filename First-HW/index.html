@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>First HW</title>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+	<body>
+		<div class="wrapper">
+			<div class="navigation">
+				<nav>
+					<div class="back-button"></div>
+					<p>
+						Orders(<span id="number-of-orders">10</span>)
+					</p>
+					<form action="post" target="_blank">
+					  <input type="text" placeholder="Search">
+					  <input type="image" src="img/search.png">
+					  <input type="reset" value="" src="img/reset.png"> 
+					</form>
+				</nav>
+
+				<section class="orders-list">
+					<article class="order-preview order-in-focus">
+						<span class="order-number">
+							Order <span>7998</span>
+						</span>
+						<span class="order-data">
+							22.11.2016
+						</span>
+						<span class="order-company">
+							Berglunds snabbkop
+						</span>
+						<span class="order-time">In time</span>
+						<span class="order-shipped-time">
+							Shipped: <span> 25 нояб. 2016 г.</span>
+						</span>
+					</article>
+					<article class="order-preview">
+						<span class="order-number">
+							Order <span>7998</span>
+						</span>
+						<span class="order-data">
+							22.11.2016
+						</span>
+						<span class="order-company">
+							Berglunds snabbkop
+						</span>
+						<span class="order-time">In time</span>
+						<span class="order-shipped-time">
+							Shipped: <span> 25 нояб. 2016 г.</span>
+						</span>
+					</article>
+					<article class="order-preview">
+						<span class="order-number">
+							Order <span>7998</span>
+						</span>
+						<span class="order-data">
+							22.11.2016
+						</span>
+						<span class="order-company">
+							Berglunds snabbkop
+						</span>
+						<span class="order-time">In time</span>
+						<span class="order-shipped-time">
+							Shipped: <span> 25 нояб. 2016 г.</span>
+						</span>
+					</article>
+					<article class="order-preview">
+						<span class="order-number">
+							Order <span>7998</span>
+						</span>
+						<span class="order-data">
+							22.11.2016
+						</span>
+						<span class="order-company">
+							Berglunds snabbkop
+						</span>
+						<span class="order-time">In time</span>
+						<span class="order-shipped-time">
+							Shipped: <span> 25 нояб. 2016 г.</span>
+						</span>
+					</article>
+					<article class="order-preview">
+						<span class="order-number">
+							Order <span>7998</span>
+						</span>
+						<span class="order-data">
+							22.11.2016
+						</span>
+						<span class="order-company">
+							Berglunds snabbkop
+						</span>
+						<span class="order-time">In time</span>
+						<span class="order-shipped-time">
+							Shipped: <span> 25 нояб. 2016 г.</span>
+						</span>
+					</article>
+					<article class="order-preview">
+						<span class="order-number">
+							Order <span>7998</span>
+						</span>
+						<span class="order-data">
+							22.11.2016
+						</span>
+						<span class="order-company">
+							Berglunds snabbkop
+						</span>
+						<span class="order-time">In time</span>
+						<span class="order-shipped-time">
+							Shipped: <span> 25 нояб. 2016 г.</span>
+						</span>
+					</article>
+					<article class="order-preview">
+						<span class="order-number">
+							Order <span>7998</span>
+						</span>
+						<span class="order-data">
+							22.11.2016
+						</span>
+						<span class="order-company">
+							Berglunds snabbkop
+						</span>
+						<span class="order-time">In time</span>
+						<span class="order-shipped-time">
+							Shipped: <span> 25 нояб. 2016 г.</span>
+						</span>
+					</article>
+					<article class="order-preview">
+						<span class="order-number">
+							Order <span>7998</span>
+						</span>
+						<span class="order-data">
+							22.11.2016
+						</span>
+						<span class="order-company">
+							Berglunds snabbkop
+						</span>
+						<span class="order-time">In time</span>
+						<span class="order-shipped-time">
+							Shipped: <span> 25 нояб. 2016 г.</span>
+						</span>
+					</article>
+				</section>
+				<footer>
+					<input type="image" src="img/funnel.png">
+					<input type="image" src="img/list-menu.png">
+				</footer>
+
+			</div>
+			<div class="currentOrder">
+				<div class="order">
+					<p class="current-order-head">Order</p>
+					<div class="price-and-order">
+						<p class="main-order">Order <span>7819</span></p>
+						<p class="order-price" id="order-price">150 935,13</p>
+					</div>
+
+					<p class="currency" id="currency">EUR</p>
+					<p class="customer">Customer: <span id="customer">Tortuga Tortuga</span></p>
+					<p class="ordered-days">Ordered: <span id="ordered-days"> 18 сент. 2016 г.</span></p>
+					<p class="shipped-days">Shipped: <span id="shipped-days">26 сент. 2016 г.</span></p>
+					<button class="address-info"></button>
+					<button class="client-info"></button>
+				</div>
+				<div class="orderAddress">
+					<p class="shipping-address">Shipping Address</p>
+					<div class="address-wrapper">
+						<div class="address-form">
+							<p>Name:</p>
+							<p>Street:</p>
+							<p>ZIP Code / City:</p>
+							<p>Region:</p>
+							<p>Country:</p>
+							
+						</div>
+						<div class="current-address">
+							<p id="name">ExcellentParcel</p>
+							<p id="street">Tollenham Court Road</p>
+							<p id="zip-code">N170AA London</p>
+							<p id="region">Greater London</p>
+							<p id="country">United Kindom</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="orderItems">
+					<p>Line items (<span>4</span>)</p>
+					<div class="table">
+
+						<div class="table-head">
+							<p>Product</p>
+							<p>Unit Price</p>
+							<p>Quantity</p>
+							<p>Total</p>
+						</div>
+
+						<div class="table-body">
+							<div>
+								<p>
+									<span class="font-bold">Aniseed Syrup</span>
+									<span>1412</span>	
+								</p>
+								<p>
+									<span class="font-bold">65.89</span>
+									<span class="currency">EUR</span>
+								</p>
+								<p>899</p>
+								<p>
+									<span class="font-bold">59 235,11</span>
+									<span class="currency">eur</span>
+								</p>
+							</div>
+							<div>
+								<p>
+									<span class="font-bold">Tunnbrod</span>
+									<span>5672</span>	
+								</p>
+								<p>
+									<span class="font-bold">14.77</span>
+									<span class="currency">Eur</span>
+								</p>
+								<p>2367</p>
+								<p>
+									<span class="font-bold">34 960,59</span>
+									<span class="currency">Eur</span>
+								</p>
+							</div>
+							<div>
+								<p>
+									<span class="font-bold">Northwoods Cranberry Sause</span>
+									<span>5046</span>	
+								</p>
+								<p>
+									<span class="font-bold">61,69</span>
+									<span class="currency">eur</span>
+								</p>
+								<p>876</p>
+								<p>
+									<span class="font-bold">53 485,23</span>
+									<span class="currency">Eur</span>
+								</p>
+							</div>
+							<div>
+								<p>
+									<span class="font-bold">Northwoods Cranberry Sause</span>
+									<span>5046</span>	
+								</p>
+								<p>
+									<span class="font-bold">61,69</span>
+									<span class="currency">eur</span>
+								</p>
+								<p>876</p>
+								<p>
+									<span class="font-bold">53 485,23</span>
+									<span class="currency">Eur</span>
+								</p>
+							</div>
+							<div>
+								<p>
+									<span class="font-bold">Northwoods Cranberry Sause</span>
+									<span>5046</span>	
+								</p>
+								<p>
+									<span class="font-bold">61,69</span>
+									<span class="currency">eur</span>
+								</p>
+								<p>876</p>
+								<p>
+									<span class="font-bold">53 485,23</span>
+									<span class="currency">Eur</span>
+								</p>
+							</div>
+							<div>
+								<p>
+									<span class="font-bold">Northwoods Cranberry Sause</span>
+									<span>5046</span>	
+								</p>
+								<p>
+									<span class="font-bold">61,69</span>
+									<span class="currency">eur</span>
+								</p>
+								<p>876</p>
+								<p>
+									<span class="font-bold">53 485,23</span>
+									<span class="currency">Eur</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<input type="image" src="img/search1.png">
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
