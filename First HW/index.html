@@ -11,7 +11,7 @@
 	<body>
 		<div class="wrapper">
 			<div class="navigation">
-				<nav>
+				<div class="search">
 					<div class="back-button"></div>
 					<p>
 						Orders(<span id="number-of-orders">10</span>)
@@ -21,10 +21,10 @@
 					  <input type="image" src="img/search.png">
 					  <input type="reset" value="" src="img/reset.png"> 
 					</form>
-				</nav>
+				</div>
 
-				<section class="orders-list">
-					<article class="order-preview order-in-focus">
+				<ul class="orders-list">
+					<li class="order-preview order-in-focus">
 						<span class="order-number">
 							Order <span>7998</span>
 						</span>
@@ -38,8 +38,8 @@
 						<span class="order-shipped-time">
 							Shipped: <span> 25 нояб. 2016 г.</span>
 						</span>
-					</article>
-					<article class="order-preview">
+					</li>
+					<li class="order-preview">
 						<span class="order-number">
 							Order <span>7998</span>
 						</span>
@@ -53,8 +53,8 @@
 						<span class="order-shipped-time">
 							Shipped: <span> 25 нояб. 2016 г.</span>
 						</span>
-					</article>
-					<article class="order-preview">
+					</li>
+					<li class="order-preview">
 						<span class="order-number">
 							Order <span>7998</span>
 						</span>
@@ -68,8 +68,8 @@
 						<span class="order-shipped-time">
 							Shipped: <span> 25 нояб. 2016 г.</span>
 						</span>
-					</article>
-					<article class="order-preview">
+					</li>
+					<li class="order-preview">
 						<span class="order-number">
 							Order <span>7998</span>
 						</span>
@@ -83,8 +83,8 @@
 						<span class="order-shipped-time">
 							Shipped: <span> 25 нояб. 2016 г.</span>
 						</span>
-					</article>
-					<article class="order-preview">
+					</li>
+					<li class="order-preview">
 						<span class="order-number">
 							Order <span>7998</span>
 						</span>
@@ -98,8 +98,8 @@
 						<span class="order-shipped-time">
 							Shipped: <span> 25 нояб. 2016 г.</span>
 						</span>
-					</article>
-					<article class="order-preview">
+					</li>
+					<li class="order-preview">
 						<span class="order-number">
 							Order <span>7998</span>
 						</span>
@@ -113,8 +113,8 @@
 						<span class="order-shipped-time">
 							Shipped: <span> 25 нояб. 2016 г.</span>
 						</span>
-					</article>
-					<article class="order-preview">
+					</li>
+					<li class="order-preview">
 						<span class="order-number">
 							Order <span>7998</span>
 						</span>
@@ -128,8 +128,8 @@
 						<span class="order-shipped-time">
 							Shipped: <span> 25 нояб. 2016 г.</span>
 						</span>
-					</article>
-					<article class="order-preview">
+					</li>
+					<li class="order-preview">
 						<span class="order-number">
 							Order <span>7998</span>
 						</span>
@@ -143,15 +143,16 @@
 						<span class="order-shipped-time">
 							Shipped: <span> 25 нояб. 2016 г.</span>
 						</span>
-					</article>
-				</section>
-				<footer>
+					</li>
+				</ul>
+				<footer class="footer-navigation">
 					<input type="image" src="img/funnel.png">
 					<input type="image" src="img/list-menu.png">
 				</footer>
 
 			</div>
-			<div class="currentOrder">
+			<div class="current-order">
+				<div class="scroll-block">
 				<div class="order">
 					<p class="current-order-head">Order</p>
 					<div class="price-and-order">
@@ -166,7 +167,7 @@
 					<button class="address-info"></button>
 					<button class="client-info"></button>
 				</div>
-				<div class="orderAddress">
+				<div class="order-address">
 					<p class="shipping-address">Shipping Address</p>
 					<div class="address-wrapper">
 						<div class="address-form">
@@ -187,8 +188,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="orderItems">
+				<div class="order-items">
 					<p>Line items (<span>4</span>)</p>
+
+
 					<div class="table">
 
 						<div class="table-head">
@@ -202,7 +205,7 @@
 							<div>
 								<p>
 									<span class="font-bold">Aniseed Syrup</span>
-									<span>1412</span>	
+									<span>1412g</span>	
 								</p>
 								<p>
 									<span class="font-bold">65.89</span>
@@ -289,11 +292,16 @@
 									<span class="currency">Eur</span>
 								</p>
 							</div>
+					
+
 						</div>
+
 					</div>
 				</div>
-				<footer>
+				</div>
+				<footer class="footer-current-order">
 					<input type="image" src="img/search1.png">
+
 				</footer>
 			</div>
 		</div>
