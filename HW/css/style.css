@@ -47,6 +47,7 @@ body {
 	height: 63px;
 	background-color: #FFF;
 	padding-top: 7px;
+	border-bottom: 1px solid #339FFA;
 }
 .search p {
 	text-align: center;
@@ -62,7 +63,7 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-form {
+.input-search {
 	margin: 0  4px;
 }
 .search input[type="text"] {
@@ -121,6 +122,7 @@ li.order-preview {
 	font-size: 21px;
 }
 .order-company {
+	min-width: 70%;
  	color: #575b64;
 }
 .order-time {
@@ -186,6 +188,7 @@ li.order-in-focus {
 .order > p {
 	margin-bottom: 13px;
 }
+
 .main-order {
 	color: #000;
 	font-size: 20px;
@@ -215,6 +218,9 @@ li.order-in-focus {
 }
 .address-info,
 .client-info {
+	position: relative;
+	top: 4px;
+	margin-top: 10px;
 	background: none;
 	border: none;
 	height: 55px;
@@ -230,11 +236,17 @@ li.order-in-focus {
 	background: url(../img/user.png) no-repeat;
 	background-size: contain;
 }
-.order-address {
+.order-info {
 	padding: 0 10px;
 	min-height: 180px;
 }
-.shipping-address {
+.shippind-info {
+	display: block;
+}
+.customer-info {
+	display: block;
+}
+.order-info-head {
 	margin-top: 25px;
 	padding-left: 10px;
 	font-size: 20px;
@@ -242,23 +254,23 @@ li.order-in-focus {
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 }
-.address-wrapper {
+.order-info-wrapper {
 	display: flex;
 }
-.address-form {
-	flex: 1 1 auto;
+.order-info-form {
+	width: 200px;
 }
-.address-form p {
+.order-info-form p {
 	text-align: right;
 	color: #797471;
 	padding-right: 15px;
 }
-.address-form p,
-.current-address p {
+.order-info-form p,
+.current-order-info p {
 	padding-bottom: 5px;
 	font-size: 13px;
 }
-.current-address {
+.current-order-info {
 	flex: 3 1 auto;
 }
 .order-items {

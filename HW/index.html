@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>First HW</title>
+	
+	
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+	<body>
+		<div class="wrapper">
+			<div class="navigation">
+				<div class="search">
+					<div class="back-button"></div>
+					<p>
+						Orders(<span id="number-of-orders">10</span>)
+					</p>
+					<div class="input-search">
+					  <input type="text" id="text" placeholder="Search">
+					  <input type="image" id="button-search"  src="img/search.png">
+					  <input type="reset"  id="reset" onclick="document.getElementById('text').value = ''" value="" src="img/reset.png"> 
+					</div>
+				</div>
+
+				<ul class="orders-list" id="orders-list">
+					
+				</ul>
+				<footer class="footer-navigation">
+					<input type="image" src="img/funnel.png">
+					<input type="image" src="img/list-menu.png">
+				</footer>
+
+			</div>
+			<div class="current-order">
+				<div class="scroll-block">
+				<div class="order">
+					<p class="current-order-head">Order</p>
+					<div class="price-and-order">
+						<p class="main-order" id="main-order">Order 1</p>
+						<p class="order-price" id="order-price">1</p>
+					</div>
+
+					<p class="currency" id="currency">1</p>
+					<p class="customer" >Customer: <span id="customer"></span></p>
+					<p class="ordered-days">Ordered: <span id="ordered-days"></span></p>
+					<p class="shipped-days" id="shipped-days"></p>
+					<button class="address-info" id="address-info"></button>
+					<button class="client-info" id="client-info"></button>
+				</div>
+				<div class="order-info">
+					<div class="shippind-info" id="shippind-info">
+						<p class="order-info-head">Shipping Address</p>
+						<div class="order-info-wrapper">
+							<div class="order-info-form">
+								<p>Name:</p>
+								<p>Street:</p>
+								<p>ZIP Code / City:</p>
+								<p>Region:</p>
+								<p>Country:</p>
+								
+							</div>
+							<div class="current-order-info">
+								<p id="name"></p>
+								<p id="street"></p>
+								<p id="zip-code"></p>
+								<p id="region"></p>
+								<p id="country"></p>
+							</div>
+						</div>
+					</div>
+					<div class="customer-info" id="customer-info">
+						<p class="order-info-head">Customer Info</p>
+						<div class="order-info-wrapper">
+							<div class="order-info-form">
+								<p>First name:</p>
+								<p>Last name:</p>
+								<p>Address:</p>
+								<p>Phone:</p>
+								<p>Email:</p>
+								
+							</div>
+							<div class="current-order-info">
+								<p id="firstName"></p>
+								<p id="lastName"></p>
+								<p id="address"></p>
+								<p id="phone"></p>
+								<p id="email"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="order-items">
+					<p>Line items (<span id="lineItems"></span>)</p>
+					<div class="table">
+						<div class="table-head">
+							<p>Product</p>
+							<p>Unit Price</p>
+							<p>Quantity</p>
+							<p>Total</p>
+						</div>
+						<div class="table-body" id="table-body">
+						</div>
+					</div>
+				</div>
+				</div>
+				<footer class="footer-current-order">
+					<input type="image" src="img/search1.png">
+
+				</footer>
+			</div>
+		</div>
+		<script src="js/data.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
